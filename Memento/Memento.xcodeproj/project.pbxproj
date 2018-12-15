@@ -16,6 +16,7 @@
 		AEEA5BA621C2EDCF001141EB /* FeedImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA5BA421C2EDCF001141EB /* FeedImagesViewController.xib */; };
 		AEEA5BA921C2F01E001141EB /* AlbunsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5BA721C2F01E001141EB /* AlbunsViewController.swift */; };
 		AEEA5BAA21C2F01E001141EB /* AlbunsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA5BA821C2F01E001141EB /* AlbunsViewController.xib */; };
+		AEEA5BAD21C3ED88001141EB /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5BAC21C3ED88001141EB /* APIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AEEA5BA421C2EDCF001141EB /* FeedImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedImagesViewController.xib; sourceTree = "<group>"; };
 		AEEA5BA721C2F01E001141EB /* AlbunsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbunsViewController.swift; sourceTree = "<group>"; };
 		AEEA5BA821C2F01E001141EB /* AlbunsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbunsViewController.xib; sourceTree = "<group>"; };
+		AEEA5BAC21C3ED88001141EB /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		AEEA5B8C21C2EB07001141EB /* Memento */ = {
 			isa = PBXGroup;
 			children = (
+				AEEA5BAB21C3E16D001141EB /* Helpers */,
 				AEEA5BA221C2ED61001141EB /* Controllers */,
 				AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */,
 				AEEA5B8F21C2EB07001141EB /* ViewController.swift */,
@@ -82,6 +85,14 @@
 				AEEA5BA821C2F01E001141EB /* AlbunsViewController.xib */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEEA5BAB21C3E16D001141EB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA5BAC21C3ED88001141EB /* APIController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				AEEA5B9021C2EB07001141EB /* ViewController.swift in Sources */,
 				AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */,
+				AEEA5BAD21C3ED88001141EB /* APIController.swift in Sources */,
 				AEEA5BA921C2F01E001141EB /* AlbunsViewController.swift in Sources */,
 				AEEA5BA521C2EDCF001141EB /* FeedImagesViewController.swift in Sources */,
 				AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */,
