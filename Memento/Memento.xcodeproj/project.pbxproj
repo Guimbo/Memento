@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE26C91A21C6C8A700E8B1B6 /* MementoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */; };
+		AE26C91D21C6D07B00E8B1B6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91C21C6D07B00E8B1B6 /* Album.swift */; };
+		AE26C91F21C6D15600E8B1B6 /* ImageStorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */; };
 		AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */; };
 		AEEA5B9021C2EB07001141EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8F21C2EB07001141EB /* ViewController.swift */; };
 		AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B9421C2EB07001141EB /* Memento.xcdatamodeld */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoTabBarController.swift; sourceTree = "<group>"; };
+		AE26C91C21C6D07B00E8B1B6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorie.swift; sourceTree = "<group>"; };
 		AEEA5B8A21C2EB07001141EB /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEA5B8F21C2EB07001141EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE26C91B21C6CFDD00E8B1B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE26C91C21C6D07B00E8B1B6 /* Album.swift */,
+				AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AEEA5B8121C2EB07001141EB = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +79,7 @@
 		AEEA5B8C21C2EB07001141EB /* Memento */ = {
 			isa = PBXGroup;
 			children = (
+				AE26C91B21C6CFDD00E8B1B6 /* Models */,
 				AEEA5BAB21C3E16D001141EB /* Helpers */,
 				AEEA5BA221C2ED61001141EB /* Controllers */,
 				AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */,
@@ -83,6 +99,7 @@
 				AEEA5BA421C2EDCF001141EB /* FeedImagesViewController.xib */,
 				AEEA5BA721C2F01E001141EB /* AlbunsViewController.swift */,
 				AEEA5BA821C2F01E001141EB /* AlbunsViewController.xib */,
+				AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,9 +187,12 @@
 				AEEA5B9021C2EB07001141EB /* ViewController.swift in Sources */,
 				AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */,
 				AEEA5BAD21C3ED88001141EB /* APIController.swift in Sources */,
+				AE26C91A21C6C8A700E8B1B6 /* MementoTabBarController.swift in Sources */,
 				AEEA5BA921C2F01E001141EB /* AlbunsViewController.swift in Sources */,
 				AEEA5BA521C2EDCF001141EB /* FeedImagesViewController.swift in Sources */,
 				AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */,
+				AE26C91D21C6D07B00E8B1B6 /* Album.swift in Sources */,
+				AE26C91F21C6D15600E8B1B6 /* ImageStorie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

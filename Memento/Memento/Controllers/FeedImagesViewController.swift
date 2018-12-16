@@ -10,10 +10,9 @@ import UIKit
 
 class FeedImagesViewController: UIViewController {
 
+    @IBOutlet weak var imageTest: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tentativa = APIController()
-        tentativa.getAllImages()
 
         // Do any additional setup after loading the view.
     }

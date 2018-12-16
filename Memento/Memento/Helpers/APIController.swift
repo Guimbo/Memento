@@ -9,12 +9,14 @@
 import Foundation
 
 class APIController {
-    let defaultSession = URLSession(configuration: .default)
-    var dataTask: URLSessionDataTask?
     
-    func getAllImages(){
-        let url = URLComponents(string: "https://picsum.photos/list")
-        print(url as Any)
+    func getRandom100(){
+        //let myGet = URL(string: "https://picsum.photos/200/300?image=01062")
+        //let getTask = URLSession.shared.dataTask(with: myGet!, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>)
+        //print(getTask)
+        
+        
+
     }
     
 }
