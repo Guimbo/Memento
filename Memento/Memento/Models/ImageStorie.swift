@@ -11,7 +11,30 @@ import UIKit
 
 class ImageStorie{
     
-    let description:String = ""
-    let date: NSDate
-    let image:UIImage
+    var description:String = "Sem descrição"
+    private var date: String
+    var image:UIImage
+    
+    var formatter = DateFormatter()
+
+    
+    init(description: String, image: UIImage, idImage: Int) {
+        self.description = description
+        self.image = image
+        
+        let dateSystem = Date()
+        formatter.dateFormat = "dd-mm-yyyy"
+        self.date = formatter.string(from: dateSystem)
+
+    }
+    
+    func changeDescription(newDescription: String){self.description = newDescription}
+    
+    func changeDate(newDate: Date){
+        formatter.dateFormat = "dd-mm-yyyy"
+        self.date = formatter.string(from: newDate)
+
+    }
+    
+    
 }
