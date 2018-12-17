@@ -10,6 +10,7 @@
 		AE26C91A21C6C8A700E8B1B6 /* MementoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */; };
 		AE26C91D21C6D07B00E8B1B6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91C21C6D07B00E8B1B6 /* Album.swift */; };
 		AE26C91F21C6D15600E8B1B6 /* ImageStorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */; };
+		AE26C92121C7ECCD00E8B1B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C92021C7ECCD00E8B1B6 /* CoreDataManager.swift */; };
 		AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */; };
 		AEEA5B9021C2EB07001141EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8F21C2EB07001141EB /* ViewController.swift */; };
 		AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B9421C2EB07001141EB /* Memento.xcdatamodeld */; };
@@ -26,6 +27,7 @@
 		AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoTabBarController.swift; sourceTree = "<group>"; };
 		AE26C91C21C6D07B00E8B1B6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorie.swift; sourceTree = "<group>"; };
+		AE26C92021C7ECCD00E8B1B6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		AEEA5B8A21C2EB07001141EB /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEA5B8F21C2EB07001141EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				AEEA5BAC21C3ED88001141EB /* APIController.swift */,
+				AE26C92021C7ECCD00E8B1B6 /* CoreDataManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				AEEA5BA521C2EDCF001141EB /* FeedImagesViewController.swift in Sources */,
 				AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */,
 				AE26C91D21C6D07B00E8B1B6 /* Album.swift in Sources */,
+				AE26C92121C7ECCD00E8B1B6 /* CoreDataManager.swift in Sources */,
 				AE26C91F21C6D15600E8B1B6 /* ImageStorie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
