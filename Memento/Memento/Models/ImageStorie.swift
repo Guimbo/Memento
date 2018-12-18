@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-class ImageStorie{
+class ImageStorie: NSObject{
     
-    var description:String = "Sem descrição"
-    private var date: String
+    var story:String = "Sem descrição"
+    var date: String
     var image:UIImage
     
     var formatter = DateFormatter()
 
     
-    init(description: String, image: UIImage, idImage: Int) {
-        self.description = description
+    init(description: String, image: UIImage) {
+        self.story = description
         self.image = image
         
         let dateSystem = Date()
@@ -28,7 +28,7 @@ class ImageStorie{
 
     }
     
-    func changeDescription(newDescription: String){self.description = newDescription}
+    func changeDescription(newDescription: String){self.story = newDescription}
     
     func changeDate(newDate: Date){
         formatter.dateFormat = "dd-mm-yyyy"

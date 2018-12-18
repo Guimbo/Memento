@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="AlbumMemento" representedClassName="AlbumMemento" syncable="YES" codeGenerationType="class">
+        <attribute name="albumPictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="background" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="story" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imageStoriesMemento" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImageStoriesMemento" inverseName="albumMemento" inverseEntity="ImageStoriesMemento" syncable="YES"/>
+    </entity>
+    <entity name="ImageStoriesMemento" representedClassName="ImageStoriesMemento" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="story" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="albumMemento" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AlbumMemento" inverseName="imageStoriesMemento" inverseEntity="AlbumMemento" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AlbumMemento" positionX="-12224.765625" positionY="-2104.48828125" width="128" height="133"/>
+        <element name="ImageStoriesMemento" positionX="-11899.00390625" positionY="-2024.06640625" width="128" height="103"/>
+    </elements>
 </model>

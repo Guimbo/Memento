@@ -11,10 +11,10 @@ import UIKit
 
 class Album{
     var title:String = ""
-    var description:String = ""
-    private var date: String = ""
+    var story:String = ""
+    var date: String = ""
     
-    var background:UIImage = UIImage(named: "camera.png")!
+    var background:UIImage?
     var albumPictures:[ImageStorie] = []
     
     
@@ -22,7 +22,7 @@ class Album{
     
     init(title: String, description: String, background: UIImage, albumPictures: [ImageStorie]) {
         self.title = title
-        self.description = description
+        self.story = description
         self.background = background
         self.albumPictures = albumPictures
         
@@ -33,7 +33,7 @@ class Album{
     
     init(title: String, description:String) {
         self.title = title
-        self.description = description
+        self.story = description
         
         let dateSystem = Date()
         formatter.dateFormat = "dd-mm-yyyy"
