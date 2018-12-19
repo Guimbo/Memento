@@ -6,7 +6,7 @@
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="story" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="imageStoriesMemento" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImageStoriesMemento" inverseName="albumMemento" inverseEntity="ImageStoriesMemento" syncable="YES"/>
+        <relationship name="imageStoriesMemento" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ImageStoriesMemento" inverseName="albumMemento" inverseEntity="ImageStoriesMemento" syncable="YES"/>
     </entity>
     <entity name="ImageStoriesMemento" representedClassName="ImageStoriesMemento" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>

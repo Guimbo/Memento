@@ -45,10 +45,8 @@ class CoreDataManager{
         } catch {
             print("deu bode")
         }
-
     }
     
-
     func fetchAlbumByName(nameAlbum: String) ->Album{
         
         let context = appDelagate.persistentContainer.viewContext
@@ -101,5 +99,27 @@ class CoreDataManager{
             print("Deu bode")
         }
         return allAlbuns
+    }
+    
+    func removeAllAlbuns(){
+        let context = appDelagate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "AlbumMemento")
+        if let result: [AlbumMemento] = try? context.fetch(request) as! [AlbumMemento]{
+            for object in result{
+                context.delete(object)
+            }
+        }
+    }
+    
+    func deleteAlbumByName(nameAlbum: String){
+        
+        let context = appDelagate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "AlbumMemento")
+        request.returnsObjectsAsFaults = false
+        if let result: [AlbumMemento] = try? context.fetch(request) as! [AlbumMemento]{
+            for data in result{
+                if (data.title == nameAlbum){context.delete(data)}
+            }
+        }
     }
 }
