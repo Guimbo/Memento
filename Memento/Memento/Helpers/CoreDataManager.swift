@@ -88,9 +88,9 @@ class CoreDataManager{
                 albumGeted.title = (data as! AlbumMemento).title!
                 albumGeted.background = UIImage(data:(data as! AlbumMemento).background!)
                 
-                let imagesINBank = ((data as! AlbumMemento).albumPictures! as! [ImageStoriesMemento])
-                for imageGeted in imagesINBank{
-                    let tempImage = ImageStorie(description:imageGeted.story!, image: UIImage(data: imageGeted.image!)!)
+                let imagesInBank = (data as! AlbumMemento).imageStoriesMemento?.allObjects
+                for imageGeted in imagesInBank!{
+                    let tempImage = ImageStorie(description:(imageGeted as! ImageStoriesMemento).story!, image: UIImage(data: (imageGeted as! ImageStoriesMemento).image!)!)
                     albumGeted.addImageStorie(imageStorie: tempImage)
                 }
                 allAlbuns.append(albumGeted)

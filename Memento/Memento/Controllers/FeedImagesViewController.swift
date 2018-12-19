@@ -14,12 +14,32 @@ class FeedImagesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CoreDataManager.shared.removeAllAlbuns()
+
+        let imageToTest = ImageStorie(description: "camera que ganhei do meu professor", image: UIImage(named: "camera.png")!)
+        print("1")
+        print(imageToTest.story)
+        print("2")
+        print(imageToTest.date)
+
+        let arrayImage: [ImageStorie] = [imageToTest]
+
+        let albumToTest = Album(title: "Coisas que ganhei", description: "Neste album estão as fotos de todos os presentes que ganhei esse ano", background: imageToTest.image, albumPictures: arrayImage)
+        print("3")
+        print(albumToTest.story)
+        print("4")
+        print(imageToTest.date)
+        CoreDataManager.shared.saveAlbum(albumToSave: albumToTest)
+        let secondAlbum = CoreDataManager.shared.fetchAlbumByName(nameAlbum:"Coisas que ganhei")
+        print("5")
+        print(secondAlbum.title)
     }
 
 
     @IBAction func actionButton(_ sender: Any) {
-        let albunsCtrl = AlbunsViewController()
-        present(albunsCtrl, animated: true)
+        
+        print("apaguei")
     }
     /*
     // MARK: - Navigation

@@ -11,6 +11,8 @@
 		AE26C91D21C6D07B00E8B1B6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91C21C6D07B00E8B1B6 /* Album.swift */; };
 		AE26C91F21C6D15600E8B1B6 /* ImageStorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */; };
 		AE26C92121C7ECCD00E8B1B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C92021C7ECCD00E8B1B6 /* CoreDataManager.swift */; };
+		AE26C92421CAB55500E8B1B6 /* CellCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C92221CAB55500E8B1B6 /* CellCustomTableViewCell.swift */; };
+		AE26C92521CAB55500E8B1B6 /* CellCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE26C92321CAB55500E8B1B6 /* CellCustomTableViewCell.xib */; };
 		AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */; };
 		AEEA5B9021C2EB07001141EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8F21C2EB07001141EB /* ViewController.swift */; };
 		AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B9421C2EB07001141EB /* Memento.xcdatamodeld */; };
@@ -28,6 +30,8 @@
 		AE26C91C21C6D07B00E8B1B6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		AE26C91E21C6D15600E8B1B6 /* ImageStorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorie.swift; sourceTree = "<group>"; };
 		AE26C92021C7ECCD00E8B1B6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AE26C92221CAB55500E8B1B6 /* CellCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCustomTableViewCell.swift; sourceTree = "<group>"; };
+		AE26C92321CAB55500E8B1B6 /* CellCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCustomTableViewCell.xib; sourceTree = "<group>"; };
 		AEEA5B8A21C2EB07001141EB /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEA5B8F21C2EB07001141EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				AEEA5BA421C2EDCF001141EB /* FeedImagesViewController.xib */,
 				AEEA5BA721C2F01E001141EB /* AlbunsViewController.swift */,
 				AEEA5BA821C2F01E001141EB /* AlbunsViewController.xib */,
+				AE26C92221CAB55500E8B1B6 /* CellCustomTableViewCell.swift */,
+				AE26C92321CAB55500E8B1B6 /* CellCustomTableViewCell.xib */,
 				AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */,
 			);
 			path = Controllers;
@@ -175,6 +181,7 @@
 			files = (
 				AEEA5B9B21C2EB09001141EB /* LaunchScreen.storyboard in Resources */,
 				AEEA5BAA21C2F01E001141EB /* AlbunsViewController.xib in Resources */,
+				AE26C92521CAB55500E8B1B6 /* CellCustomTableViewCell.xib in Resources */,
 				AEEA5BA621C2EDCF001141EB /* FeedImagesViewController.xib in Resources */,
 				AEEA5B9821C2EB09001141EB /* Assets.xcassets in Resources */,
 			);
@@ -191,6 +198,7 @@
 				AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */,
 				AEEA5BAD21C3ED88001141EB /* APIController.swift in Sources */,
 				AE26C91A21C6C8A700E8B1B6 /* MementoTabBarController.swift in Sources */,
+				AE26C92421CAB55500E8B1B6 /* CellCustomTableViewCell.swift in Sources */,
 				AEEA5BA921C2F01E001141EB /* AlbunsViewController.swift in Sources */,
 				AEEA5BA521C2EDCF001141EB /* FeedImagesViewController.swift in Sources */,
 				AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */,
