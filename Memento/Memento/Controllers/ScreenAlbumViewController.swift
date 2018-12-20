@@ -14,6 +14,7 @@ class ScreenAlbumViewController: UIViewController, UICollectionViewDelegate, UIC
     var albumToShow:Album?
 
     @IBOutlet weak var collectionView: UICollectionView!
+
     
     
     override func viewDidLoad() {
@@ -23,9 +24,14 @@ class ScreenAlbumViewController: UIViewController, UICollectionViewDelegate, UIC
         let nibCell = UINib(nibName: "CellCollectionViewCell", bundle: nil)
         collectionView.register(nibCell, forCellWithReuseIdentifier: "cellCollection")
         let nibHeader = UINib(nibName: "HeaderCollectionReusableView", bundle: nil)
-        collectionView.register(nibHeader, forSupplementaryViewOfKind: "HeaderCollectionReusableView", withReuseIdentifier: "headerCustom")
+        collectionView.register(nibHeader, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCustom")
 
     }
+    
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return(albumToShow?.albumPictures.count)!
@@ -40,14 +46,13 @@ class ScreenAlbumViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: "HeaderCollectionReusableView", withReuseIdentifier: "headerCustom", for: indexPath) as! HeaderCollectionReusableView
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCustom", for: indexPath) as! HeaderCollectionReusableView
         headerView.imageBG.image = albumToShow?.background
         headerView.dateAlbum.text = albumToShow?.date
         headerView.storyAlbum.text = albumToShow?.story
-        
+        headerView.titleAlbum.text = albumToShow?.title
         return headerView
     }
-
 
     /*
     // MARK: - Navigation
@@ -59,4 +64,10 @@ class ScreenAlbumViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     */
 
+}
+
+extension ScreenAlbumViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 360)
+    }
 }

@@ -10,10 +10,10 @@ import UIKit
 
 class FeedImagesViewController: UIViewController,
     UICollectionViewDelegate,
-UICollectionViewDataSource, UIViewControllerPreviewingDelegate {
+UICollectionViewDataSource  {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var imageFromAPI: [UIImage] = APIController.shared.getRandomImages(num: 50)
+    var imageFromAPI: [UIImage] = APIController.shared.getRandomImages(num: 5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,16 +61,16 @@ UICollectionViewDataSource, UIViewControllerPreviewingDelegate {
         
     }
     
-    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-        guard let indexPath = collectionView.indexPathForItem(at: collectionView.convert(location, from: view)), let cell = collectionView.cellForItem(at: indexPath) else{
-            return nil
-        }
-        
-    }
-    
-    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
-        <#code#>
-    }
+//    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+//        guard let indexPath = collectionView.indexPathForItem(at: collectionView.convert(location, from: view)), let cell = collectionView.cellForItem(at: indexPath) else{
+//            return nil
+//        }
+//
+//    }
+//
+//    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+//
+//    }
     
     
 
