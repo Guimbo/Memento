@@ -8,8 +8,8 @@
 
 import UIKit
 
-class AlbunsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class AlbunsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AlbunsViewDelegate {
+    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,6 +22,7 @@ class AlbunsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let nib = UINib(nibName: "CellCustomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
+        print(listOfAlbuns.count)
         
 
         // Do any additional setup after loading the view.
@@ -43,7 +44,19 @@ class AlbunsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 104
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let screenAlbum = ScreenAlbumViewController()
+        screenAlbum.delegate = self
+        screenAlbum.albumToShow = changeValues(album: listOfAlbuns[indexPath.row])
+        present(screenAlbum, animated: true)
+        
+    }
+    
+    func changeValues(album: Album) -> Album {
+        return album
+    }
     
     /*
     // MARK: - Navigation
