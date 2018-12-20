@@ -16,6 +16,10 @@
 		AE6512DC21CB291A00128C02 /* ScreenAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6512DA21CB291A00128C02 /* ScreenAlbumViewController.swift */; };
 		AE6512DD21CB291A00128C02 /* ScreenAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6512DB21CB291A00128C02 /* ScreenAlbumViewController.xib */; };
 		AE6512E121CBCC5200128C02 /* AlbunsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6512E021CBCC5200128C02 /* AlbunsViewDelegate.swift */; };
+		AE6512E921CBD69D00128C02 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6512E721CBD69D00128C02 /* CellCollectionViewCell.swift */; };
+		AE6512EA21CBD69D00128C02 /* CellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6512E821CBD69D00128C02 /* CellCollectionViewCell.xib */; };
+		AE6512F021CBECE700128C02 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6512EE21CBECE700128C02 /* HeaderCollectionReusableView.swift */; };
+		AE6512F121CBECE700128C02 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6512EF21CBECE700128C02 /* HeaderCollectionReusableView.xib */; };
 		AEEA5B8E21C2EB07001141EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */; };
 		AEEA5B9021C2EB07001141EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B8F21C2EB07001141EB /* ViewController.swift */; };
 		AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEEA5B9421C2EB07001141EB /* Memento.xcdatamodeld */; };
@@ -38,6 +42,10 @@
 		AE6512DA21CB291A00128C02 /* ScreenAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenAlbumViewController.swift; sourceTree = "<group>"; };
 		AE6512DB21CB291A00128C02 /* ScreenAlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenAlbumViewController.xib; sourceTree = "<group>"; };
 		AE6512E021CBCC5200128C02 /* AlbunsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbunsViewDelegate.swift; sourceTree = "<group>"; };
+		AE6512E721CBD69D00128C02 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE6512E821CBD69D00128C02 /* CellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE6512EE21CBECE700128C02 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		AE6512EF21CBECE700128C02 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		AEEA5B8A21C2EB07001141EB /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEA5B8D21C2EB07001141EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEA5B8F21C2EB07001141EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,26 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AE6512E221CBD4BA00128C02 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				AE26C92221CAB55500E8B1B6 /* CellCustomTableViewCell.swift */,
+				AE26C92321CAB55500E8B1B6 /* CellCustomTableViewCell.xib */,
+				AE6512E721CBD69D00128C02 /* CellCollectionViewCell.swift */,
+				AE6512E821CBD69D00128C02 /* CellCollectionViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		AE6512EB21CBEC6F00128C02 /* HeaderCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AE6512EE21CBECE700128C02 /* HeaderCollectionReusableView.swift */,
+				AE6512EF21CBECE700128C02 /* HeaderCollectionReusableView.xib */,
+			);
+			path = HeaderCollectionView;
+			sourceTree = "<group>";
+		};
 		AEEA5B8121C2EB07001141EB = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +119,8 @@
 		AEEA5B8C21C2EB07001141EB /* Memento */ = {
 			isa = PBXGroup;
 			children = (
+				AE6512EB21CBEC6F00128C02 /* HeaderCollectionView */,
+				AE6512E221CBD4BA00128C02 /* CustomCells */,
 				AE26C91B21C6CFDD00E8B1B6 /* Models */,
 				AEEA5BAB21C3E16D001141EB /* Helpers */,
 				AEEA5BA221C2ED61001141EB /* Controllers */,
@@ -111,8 +141,6 @@
 				AEEA5BA421C2EDCF001141EB /* FeedImagesViewController.xib */,
 				AEEA5BA721C2F01E001141EB /* AlbunsViewController.swift */,
 				AEEA5BA821C2F01E001141EB /* AlbunsViewController.xib */,
-				AE26C92221CAB55500E8B1B6 /* CellCustomTableViewCell.swift */,
-				AE26C92321CAB55500E8B1B6 /* CellCustomTableViewCell.xib */,
 				AE26C91921C6C8A700E8B1B6 /* MementoTabBarController.swift */,
 				AE6512DA21CB291A00128C02 /* ScreenAlbumViewController.swift */,
 				AE6512DB21CB291A00128C02 /* ScreenAlbumViewController.xib */,
@@ -188,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6512F121CBECE700128C02 /* HeaderCollectionReusableView.xib in Resources */,
+				AE6512EA21CBD69D00128C02 /* CellCollectionViewCell.xib in Resources */,
 				AEEA5B9B21C2EB09001141EB /* LaunchScreen.storyboard in Resources */,
 				AEEA5BAA21C2F01E001141EB /* AlbunsViewController.xib in Resources */,
 				AE26C92521CAB55500E8B1B6 /* CellCustomTableViewCell.xib in Resources */,
@@ -212,10 +242,12 @@
 				AE26C91A21C6C8A700E8B1B6 /* MementoTabBarController.swift in Sources */,
 				AE26C92421CAB55500E8B1B6 /* CellCustomTableViewCell.swift in Sources */,
 				AEEA5BA921C2F01E001141EB /* AlbunsViewController.swift in Sources */,
+				AE6512E921CBD69D00128C02 /* CellCollectionViewCell.swift in Sources */,
 				AEEA5BA521C2EDCF001141EB /* FeedImagesViewController.swift in Sources */,
 				AEEA5B9621C2EB07001141EB /* Memento.xcdatamodeld in Sources */,
 				AE26C91D21C6D07B00E8B1B6 /* Album.swift in Sources */,
 				AE26C92121C7ECCD00E8B1B6 /* CoreDataManager.swift in Sources */,
+				AE6512F021CBECE700128C02 /* HeaderCollectionReusableView.swift in Sources */,
 				AE26C91F21C6D15600E8B1B6 /* ImageStorie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,7 @@ class APIController {
     private init() {}
     
     func getRandomImage() -> UIImage{
-        let myGet = URL(string: "https://picsum.photos/200/300?image=01062")
+        let myGet = URL(string: "https://picsum.photos/200/300/?random")
         var image: UIImage?
         
         if let data = try? Data(contentsOf: myGet!){
@@ -25,8 +25,17 @@ class APIController {
         }
         return image!
     }
-        
-        //let getTask = URLSession.shared.dataTask(with: myGet!, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>)
-        //print(getTask)
+    
+    func getRandomImages(num: Int) ->[UIImage]{
+        var arrayImages:[UIImage] = []
+        var control = num
+        while control != 0 {
+            arrayImages.append(getRandomImage())
+            control = control - 1
+            
+        }
+        return arrayImages
+    }
+    
     
 }
